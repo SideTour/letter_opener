@@ -2,7 +2,7 @@ Inbox:
 
 <%- @letters.each do |letter| %>
   <div class="letter">
-    <%= link_to "#{letter.name} - #{letter.updated_at}", letter_opener_letter_path(letter.name, :style=>:plain) %>
+    <%= link_to "#{letter.name} - #{letter.updated_at}", letter_opener_letter_path(letter.name, :style=>:rich) %>
   </div>
 <%- end %>
 
